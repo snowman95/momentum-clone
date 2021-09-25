@@ -1,0 +1,21 @@
+.todo-list {
+  padding-top: var(--horizontal_space);
+}
+.todo-list__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.todo-list__list span {
+  background-color: transparent;
+  text-shadow: var(--outliner);
+  border-color: white;
+  border-bottom: 1px solid white;
+}
+.todo-list__list button {
+  margin-left: 10px;
+  background-color: transparent;
+  border-color: white;
+  border-radius: 10px;
+}

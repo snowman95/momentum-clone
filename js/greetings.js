@@ -32,6 +32,7 @@ function paintGreetings(usersname){
 
 // 가져오기
 const savedUsername = localStorage.getItem(USERNAME_KEY);
+console.log(savedUsername)
 if(savedUsername === null){
   // form 보이기
   loginForm.classList.remove(HIDDEN_CLASSNAME);

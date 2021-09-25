@@ -1,3 +1,15 @@
-.hidden {
-  display: none;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Yellowtail&display=swap");
+@import "reset.css";
+@import "main.css";
+@import "footer.css";
+@import "todo_list.css";
+
+body {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --horizontal_space: 25px;
+  --outliner: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
