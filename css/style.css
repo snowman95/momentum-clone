@@ -1,15 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Yellowtail&display=swap");
 @import "reset.css";
 @import "main.css";
-@import "footer.css";
 @import "todo_list.css";
+@import "footer.css";
 
 body {
-  color: white;
   font-family: "Open Sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  display: grid;
+  grid-template-columns: 5fr minmax(250px, 1fr);
+  grid-template-rows: 7fr 1fr;
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 250px;
+}
+aside {
+  padding: var(--horizontal_space) 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+footer {
+  grid-column: 1 / -1;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 10fr 1fr;
+  }
+  main {
+    margin-left: 0px;
+  }
 }
 
 :root {
   --horizontal_space: 25px;
-  --outliner: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  --outliner: 2px 2px black;
 }
