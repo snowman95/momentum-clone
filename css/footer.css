@@ -1,11 +1,8 @@
 .sub-content {
   background-color: rgba(1, 1, 1, 0.5);
-  width: 100vw;
-  position: fixed;
-  bottom: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 

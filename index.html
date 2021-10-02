@@ -9,31 +9,38 @@
   </head>
   <body>
     <main id="main-content">
-      <h2 id="clock" class="main-content__clock">00:00:00</h2>
-
-      <form class="main-content__login_form hidden" id="login-form">
+      <h2 id="main-content__clock">00:00:00</h2>
+      <form id="main-content__login_form" class="hidden">
         <input
+          id="main-content__login_form__input"
           required
           maxlength="15"
           type="text"
           placeholder="What is your name?"
         />
-        <input type="submit" value="Log In" />
-      </form>
-
-      <h1 class="main-content__login_greeting hidden" id="greeting"></h1>
-
-      <form class="main-content__todo_form" id="todo-form">
         <input
+          id="main-content__login_form__button"
+          type="submit"
+          value="Log In"
+        />
+      </form>
+      <div id="main-content__login_greeting" class="hidden"></div>
+    </main>
+
+    <aside id="todo" class="hidden">
+      <form id="todo-form">
+        <h1 id="todo-form__title">Todo List</h1>
+        <input
+          id="todo-form__text"
           type="text"
           placeholder="Write a To Do and Press Enter"
           required
         />
       </form>
-      <div class="todo-list">
-        <ul class="todo-list__list" id="todo-list"></ul>
+      <div id="todo-list">
+        <ul id="todo-list__element"></ul>
       </div>
-    </main>
+    </aside>
 
     <footer class="sub-content">
       <div class="sub-content__quote" id="quote">
@@ -45,11 +52,11 @@
         <span></span>
       </div>
     </footer>
-    <script src="js/greetings.js"></script>
+    <script src="js/todo.js" type="module"></script>
+    <script src="js/greetings.js" type="module"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
-    <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
   </body>
 </html>
